@@ -1,0 +1,69 @@
+React blog project
+1. 회원가입 / 로그인 기능
+- 페이지 컴포넌트: LoginPage.js, RegisterPage.js
+- 프레젠테이셔널 컴포넌트: AuthForm.js, AuthTemplate.js, Button.js
+- 컨테이너 컴포넌트: LoginForm.js, RegisterForm.js
+- 리덕스 모듈: auth.js, user.js
+
+2. 글쓰기 기능
+- 페이지 컴포넌트: WritePage.js
+- 프레젠테이셔널 컴포넌트: Responsive.js ,Editor.js, TagBox.js, WriteActionButtons.js
+- 컨테이너 컴포넌트: EditorContainer.js, TagBoxContainer.js, WriteActionButtonsContainer.js
+- 리덕스 모듈: write.js
+
+3. 전체 포스트 조회 및 특정 포스트 조회
+- 페이지 컴포넌트: PostListPage.js, PostPage.js
+- 프레젠테이셔널 컴포넌트: Header.js, Button.js, PostList.js, PostViewer.js, Pagination.js
+- 컨테이너 컴포넌트: HeaderContainer.js, PostListContainer.js PostViewerContainer.js, PaginationContainer.js
+- 리덕스 모듈: post.js, posts.js
+
+4. 포스트 수정 및 삭제
+- 프레젠테이셔널 컴포넌트: PostActionButtons.js, AskRemoveModal.js
+
+- CRA 프로젝트
+
+- ESLint와 Prettier를 통한 코드 문법 및 코드 스타일 관리
+
+- react-rotuer-dom 라이브러리를 통한 SPA 적용
+총 5개의 페이지로 구성(로그인, 회원가입, 글쓰기, 포스트 읽기, 포스트 목록)
+
+- styled-components 라이브러리를 통한 스타일링
+
+- redux를 통한 상태 관리 (Ducks 패턴)
+
+- redux-saga를 통한 리덕스에 API 연동
+
+- axios HTTP 클라이언트 라이브러리 사용
+
+- localstorage에 사용자 정보를 기록하여 새로고침 시에도 로그인 상태 유지
+
+- Quill 위지윅 에디터 라이브러리 사용 (글쓰기 기능)
+
+- 모달 컴포넌트 제작 (삭제 기능)
+
+- 벡엔트 서버와 리액트 앱의 출처가 같기 때문에 cors 오류 처리 불필요
+
+- 페이지네이션 구현 (포스트 목록 조회 시)
+
+- qs 라이브러리를 통한 쿼리 값 생성 및 JSON 변환 (포스트 목록 조회 시)
+
+- sanitize-html 라이브러리를 사용한 HTML 필터링 (태그를 제외한 내용 가져오기 및 악성 스크립트 작성 방지)
+
+- react-helmet-async 라이브러리로 meta 태그 설정, 페이지 제목 설정 등 (HelmetProvider, Helmet 컴포넌트)
+
+- 프로젝트 빌드(yarn build)하고 koa-static을 통해 정적 파일 제공
+
+- jwt를 통한 회원 인증 시스템 (토큰 기반)
+
+- mongoose를 통한 mongoDB 연동
+
+- koa 웹 프레임워크, koa-router, koa-bodyparser
+
+- Joi 라이브러리를 사용한 요청 검증
+
+- nodejs에서 esm 라이브러리로 ES 모듈 import/export 문법 사용하기
+
+----------------------------------------------------------------------------
+
+참고
+리액트를 다루는 기술 (velopert)
